@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .hero_banner {
+    background-image: url("/images/world-map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .fligth_search {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .input_wrapper {
+    width: 324px;
+    height: 48px;
+    box-shadow: 0px 12px 24px 0px rgba(27, 59, 119, 0.05), 0px 24px 60px 0px rgba(6, 47, 125, 0.05),
+      0px 2px 4px 0px rgba(7, 4, 146, 0.1);
+  }
 }
