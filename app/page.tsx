@@ -1,4 +1,4 @@
-import DestinationInput from "@/components/inHouse/DestinationInput";
+import FlightStatus from "@/components/inHouse/FlightStatus";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,8 +13,7 @@ export default function Home() {
           className="mb-12"
         />
         <div className="fligth_search flex justify-center items-center">
-          <DestinationInput type="departure" />
-          <DestinationInput type="arrival" />
+          <FlightStatus />
         </div>
       </div>
     </main>
