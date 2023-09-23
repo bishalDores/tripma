@@ -8,12 +8,12 @@ export default function Home() {
     <main>
       <div className="hero_banner h-[calc(100vh-96px)] flex flex-col pt-24 items-center">
         <Image src={"/images/hero-text.png"} width={756} height={265} alt="its more than just a trip" className="mb-12" />
-        <div className="fligth_search flex justify-center items-center">
+        <div className="fligth_search flex justify-center items-center lg:flex-row flex-col">
           <FlightStatus />
         </div>
       </div>
       <div className="container mx-auto mt-10">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-6 lg:flex-row flex-col">
           <h2 className="text-[24px] text-[#6E7491] font-bold">
             Find your next adventure with these{" "}
             <span className="text-primary-default">

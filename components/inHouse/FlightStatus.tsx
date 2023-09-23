@@ -10,7 +10,7 @@ const FlightStatus = () => {
       <DestinationInput type="departure" />
       <DestinationInput type="arrival" />
       <ScheduleInput />
-      <Button className="bg-primary-default hover:bg-primary-hover text-base transition-all duration-1000 w-[96px] h-[48px] ml-[-6px]">
+      <Button className="bg-primary-default hover:bg-primary-hover text-base transition-all duration-1000 w-[96px] h-[48px] ml-[-6px] mt-5 lg:mt-0">
         Search
       </Button>
     </>

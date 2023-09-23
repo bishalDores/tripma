@@ -2,12 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const DestinationInput = ({ type }: { type: string }) => {
   return (
@@ -15,7 +10,7 @@ const DestinationInput = ({ type }: { type: string }) => {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <div
-            className={`input_wrapper border border-[#CBD4E6] leading-[48px] text-primary-inactive flex items-center cursor-pointer bg-white ${
+            className={`input_wrapper mb-5 lg:mb-0 border border-[#CBD4E6] leading-[48px] text-primary-inactive flex items-center cursor-pointer bg-white ${
               type === "departure" ? "rounded-l" : ""
             }`}
           >
