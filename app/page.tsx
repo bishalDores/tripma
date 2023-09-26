@@ -1,5 +1,6 @@
 import Card from "@/components/inHouse/Card";
 import FlightStatus from "@/components/inHouse/FlightStatus";
+import ReviewCard from "@/components/inHouse/ReviewCard";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +8,13 @@ export default function Home() {
   return (
     <main>
       <div className="hero_banner h-[calc(100vh-96px)] flex flex-col pt-24 items-center">
-        <Image src={"/images/hero-text.png"} width={756} height={265} alt="its more than just a trip" className="mb-12" />
+        <Image
+          src={"/images/hero-text.png"}
+          width={756}
+          height={265}
+          alt="its more than just a trip"
+          className="mb-12"
+        />
         <div className="fligth_search flex justify-center items-center lg:flex-row flex-col">
           <FlightStatus />
         </div>
@@ -61,8 +68,8 @@ export default function Home() {
                 Tsavo East National Park, <span className="text-primary-default">Kenya</span>
               </h4>
               <p className="text-[14px] text-primary-inactive">
-                Named after the Tsavo River, and opened in April 1984, Tsavo East National Park is one of the oldest parks in Kenya. It is located in
-                the semi-arid Taru Desert.
+                Named after the Tsavo River, and opened in April 1984, Tsavo East National Park is one of the oldest
+                parks in Kenya. It is located in the semi-arid Taru Desert.
               </p>
             </div>
             <div className="text-[#6E7491] font-semibold">$1,248</div>
@@ -111,6 +118,14 @@ export default function Home() {
           <Link href={"/"} className="py-3 px-5 bg-primary-default text-white rounded text-[14px]">
             Explore more stays
           </Link>
+        </div>
+
+        {/* user review */}
+        <h2 className="mt-16 mb-6 text-center text-[24px] font-bold text-[#6E7491]">
+          What <span className="text-primary-default">Tripma</span> users are saying
+        </h2>
+        <div>
+          <ReviewCard />
         </div>
       </div>
     </main>
