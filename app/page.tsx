@@ -19,7 +19,7 @@ export default function Home() {
           <FlightStatus />
         </div>
       </div>
-      <div className="container mx-auto mt-10 px-4 sm:px-0">
+      <div className="container mx-auto mt-10 px-4 md:px-4 lg:px-0">
         <div className="flex items-center justify-between mb-6 lg:flex-row flex-col">
           <h2 className="text-[24px] text-[#6E7491] font-bold">
             Find your next adventure with these{" "}
@@ -35,7 +35,7 @@ export default function Home() {
             </Link>
           </h2>
         </div>
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-10 justify-items-center md:justify-items-start">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-10 justify-items-center lg:justify-items-start">
           <Card
             img="/images/sanghai.jpg"
             description="China’s most international city"
@@ -91,7 +91,7 @@ export default function Home() {
             </Link>
           </h2>
         </div>
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-10 justify-items-center md:justify-items-start">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-10 justify-items-center lg:justify-items-start">
           <Card
             img="/images/maldives.jpg"
             description="From the 2nd century AD, the islands were known as the 'Money Isles' due to the abundance of cowry shells, a currency of the early ages."
@@ -124,8 +124,10 @@ export default function Home() {
         <h2 className="mt-16 mb-6 text-center text-[24px] font-bold text-[#6E7491]">
           What <span className="text-primary-default">Tripma</span> users are saying
         </h2>
-        <div>
-          <ReviewCard />
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 mb-10 justify-items-center lg:justify-items-start">
+          <ReviewCard ratings={4} />
+          <ReviewCard ratings={5} />
+          <ReviewCard ratings={2} />
         </div>
       </div>
     </main>
